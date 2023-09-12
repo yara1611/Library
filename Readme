@@ -1,1 +1,6 @@
 Library
+Reading management website
+features:
+- Add books
+- Remove books
+- Update reading status
