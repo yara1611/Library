@@ -1,0 +1,64 @@
+div{
+    border-radius: 5px;
+    border: 1px solid rgb(234, 206, 172);
+}
+body{
+    background-color: bisque;
+}
+.sidebar{
+    float: inline-start;
+    background-color: rgb(228, 201, 168);
+    text-align: center;
+    
+}
+.sidebar > form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 10em;
+    margin-top: -10px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+   
+.headerbar{
+    background-color: rgb(228, 201, 168);
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.bookList{
+    margin-top: 0px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: none;
+    /* justify-content: center; */
+}
+.bookItem{
+    background-color: rgb(227, 208, 196);
+    border: 3px solid rgb(81, 47, 4);
+    padding: 10px;
+    padding-bottom: 5px;
+    width: 10em;
+    height:15em;
+    margin: 10px;
+    border-radius: 10px;
+    text-align:center;
+    
+ }
+
+ .bookItem > header{
+    color: aliceblue;
+    margin: 0px;
+    gap: 0px;
+    background-color: rgb(48, 41, 32);
+    font-size: larger;
+    padding: 15px;
+    word-wrap: break-word;
+ }
+ .bookItem > p{
+    margin-top: 1px;
+ }
+
