@@ -88,7 +88,7 @@ function display(){
 }
 
 function removeBook(index){
-   myLibrary.splice(index,1)
+    myLibrary.splice(index,1)
     console.log(myLibrary)
     display()
 }
