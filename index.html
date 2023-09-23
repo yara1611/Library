@@ -10,11 +10,18 @@
 
 <body>
     <header id="headboard">
-    <h1 style="text-align: center;">Library</h1>
+        <h1 style="text-align: center;">Library</h1>
     </header>
     <!-- <h2 style="text-align: center;">Book List</h2> -->
     <div class="headerbar">
-        <p id="counter"></p>
+        <p id="counter" style="display: inline-block;"></p>
+        <p id="Rcounter" style="display: inline-block; margin-left: 20px;"></p>
+        <label for="sort" style="margin-left: 20px;">Sort:</label>
+        <select name="sort" id="sort">
+            <option value=""></option>
+            <option value="Asc">Ascending</option>
+            <option value="Dsc">Descending</option>
+        </select>
     </div>
     <div class="sidebar">
         <h3>Add A Book</h3>
@@ -27,16 +34,16 @@
             <br>
             <label for="year">Year:</label> <input type="number" name="year" id="year">
             <br>
-            
+
             <button type="button" name="AddBook" id="AddBook" value="add"> Add Book</button>
 
-            
+
         </form>
     </div>
     <div class="bookList">
 
     </div>
-    
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
