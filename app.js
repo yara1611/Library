@@ -36,16 +36,19 @@ const myLibrary = []
 
 //book object
 
-function Book(title,author,pages,year,read) {
+class Book {
+    constructor(title,author,pages,year,read){
     this.title = title
     this.author = author
     this.pages =pages
     this.year = year
     this.read = read
+    }
+    toggleRead(){
+        this.read =!this.read
+    }
 }
-Book.prototype.toggleRead = function(){
-    this.read =!this.read
-}
+
 
 function toggleRead(index) {
     myLibrary[index].toggleRead()
@@ -63,6 +66,10 @@ display(myLibrary)
 
 addBtn.addEventListener('click',addBookToLibrary)
 function addBookToLibrary() {
+    if(title.value===''){
+        alert("Please provide a title")
+        return;
+    }
     book = new Book(title.value,auth.value,pages.value,year.value)
     myLibrary.push(book)
     // console.log(myLibrary)
