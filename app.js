@@ -14,22 +14,7 @@ const auth = inputs[1]
 const pages = inputs[2]
 const year = inputs[3]
 
-// //pop-up
-// var closePopup = document.getElementById("popupclose");
-// var overlay = document.getElementById("overlay");
-// var popup = document.getElementById("popup");
-// var button = document.getElementById("button");
 
-//     // Close Popup Event
-// closePopup.onclick = function() {
-//     overlay.style.display = 'none';
-//     popup.style.display = 'none';
-// }
-
-// button.onclick = function() {
-//     overlay.style.display = 'block';
-//     popup.style.display = 'block';
-// }
 
 
 const myLibrary = []
